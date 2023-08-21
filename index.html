@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo.jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
+    <title>Weather API</title>
+  </head>
+  <style>
+    body {
+      background-image: url(img/1.jpg);
+    }
+  </style>
+  <body class="bg-cover bg-center bg-no-repeat min-h-screen">
+    <div class="container">
+      <h1
+        class="mt-4 tracking-normal sm:text-5xl text-center p-4 text-orange-600 animate-pulse"
+      >
+        Weather API
+      </h1>
+
+      <div class="weather">
+        <div
+          class="m-auto weatherInfo mt-12 text-white text-1xl tracking-normal"
+        >
+          <img id="currentImg" class="m-auto" src="" alt="" />
+          <h2 id="city" class="text-center text-teal-400"></h2>
+        </div>
+      </div>
+      <div class="all mt-20 md:mt-32 md:flex items-center justify-center">
+        <form class="m-auto text-center">
+          <input
+            id="inp"
+            type="text"
+            class="w-1/2 md:w-1/1 bg-transparent text-3xl text-white bg-gray-400 text-center outline-none border-2 border-gray-400 rounded-lg mr-3"
+          />
+          <button
+            id="btn"
+            type="submit"
+            class="fa-solid fa-magnifying-glass"
+          ></button>
+        </form>
+        <div
+          class="bg-gray-700 mt-20 md:mt-0 p-5 flex items-center justify-between"
+        >
+          <div id="left" class="flex items-center">
+            <h1 id="degree" class="text-3xl text-teal-400"></h1>
+            <img id="cloud" src="" alt="" />
+          </div>
+          <div class="right grid grid-cols-2 gap-5">
+            <div class="wind text-center">
+              <i class="fa-solid fa-wind text-2xl text-zinc-500"></i>
+              <p class="text-white mt-1 mb-1">Wind</p>
+              <p id="windSpead" class="text-xs text-orange-500"></p>
+            </div>
+
+            <div class="Humidity text-center">
+              <img src="img/rain.png" class="m-auto" alt="" />
+              <p class="text-white mt-1 mb-1">Humidity</p>
+              <p id="Humidity" class="text-xs text-orange-500"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
